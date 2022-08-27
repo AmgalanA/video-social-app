@@ -18,7 +18,7 @@ interface IProps {
   postDetails: Video;
 }
 
-const detail: NextPage<IProps> = ({ postDetails }) => {
+const Detail: NextPage<IProps> = ({ postDetails }) => {
   const { back } = useRouter();
 
   const [post, setPost] = useState(postDetails);
@@ -198,4 +198,4 @@ export const getServerSideProps = async ({
   };
 };
 
-export default detail;
+export default Detail;

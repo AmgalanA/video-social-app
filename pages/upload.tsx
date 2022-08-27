@@ -7,7 +7,7 @@ import useAuthStore from "../store/authStore";
 import { client } from "../utils/client";
 import { topics } from "../utils/constants";
 
-const upload = () => {
+const Upload = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [videoAsset, setVideoAsset] = useState<SanityAssetDocument>();
   const [wrongFileType, setWrongFileType] = useState<boolean>(false);
@@ -189,4 +189,4 @@ const upload = () => {
   );
 };
 
-export default upload;
+export default Upload;

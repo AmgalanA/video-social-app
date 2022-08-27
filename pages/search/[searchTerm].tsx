@@ -14,7 +14,7 @@ interface IProps {
   videos: Video[];
 }
 
-const search: NextPage<IProps> = ({ videos }) => {
+const Search: NextPage<IProps> = ({ videos }) => {
   const [isAccounts, setisAccounts] = useState(false);
 
   const { query } = useRouter();
@@ -108,4 +108,4 @@ export const getServerSideProps = async ({
     props: { videos: data },
   };
 };
-export default search;
+export default Search;
