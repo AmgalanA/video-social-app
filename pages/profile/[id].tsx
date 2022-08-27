@@ -97,7 +97,9 @@ export const getServerSideProps = async ({
 }: {
   params: { id: string };
 }) => {
-  const { data } = await axios.get(`http://localhost:3000/api/profile/${id}`);
+  const { data } = await axios.get(
+    `https://video-social-app.vercel.app/api/profile/${id}`
+  );
 
   return {
     props: { data },

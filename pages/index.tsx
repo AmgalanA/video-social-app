@@ -26,9 +26,11 @@ export const getServerSideProps: GetServerSideProps = async ({
   let response = null;
 
   if (topic) {
-    response = await axios.get(`http://localhost:3000/api/discover/${topic}`);
+    response = await axios.get(
+      `https://video-social-app.vercel.app/api/discover/${topic}`
+    );
   } else {
-    response = await axios.get(`http://localhost:3000/api/post`);
+    response = await axios.get(`https://video-social-app.vercel.app/api/post`);
   }
 
   return {

@@ -101,7 +101,7 @@ export const getServerSideProps = async ({
   params: { searchTerm: string };
 }) => {
   const { data } = await axios.get(
-    `http://localhost:3000/api/search/${searchTerm}`
+    `https://video-social-app.vercel.app/api/search/${searchTerm}`
   );
 
   return {
